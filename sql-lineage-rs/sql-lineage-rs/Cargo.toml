@@ -1,0 +1,9 @@
+[package]
+name = "sql-lineage-rs"
+version = "0.1.0"
+edition = "2021"
+authors = ["James Guisgand"]
+description = "Educational Rust CLI for SQL table-dependency extraction"
+license = "MIT"
+
+[dependencies]

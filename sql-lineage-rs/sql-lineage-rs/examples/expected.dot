@@ -1,0 +1,13 @@
+digraph lineage {
+  rankdir=LR;
+  node [shape=box];
+  "crm.customers";
+  "finance.invoices";
+  "mart.active_customers";
+  "raw.orders";
+  "reporting.customer_revenue";
+  "crm.customers" -> "mart.active_customers";
+  "crm.customers" -> "reporting.customer_revenue";
+  "raw.orders" -> "mart.active_customers";
+  "raw.orders" -> "reporting.customer_revenue";
+}
